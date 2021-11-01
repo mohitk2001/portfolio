@@ -1,0 +1,16 @@
+.header{
+    background-color: #802BB1;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    color: #D1D7E0;
+    position: sticky;
+    top: 0;
+}
+.header>h2{
+    font-weight: 100;
+    font-size: 35px;
+    font-family: "Titillium Web", sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
