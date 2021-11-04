@@ -1,0 +1,37 @@
+.contact{
+    background-color:#4C495D ;
+    width: 100%;
+}
+.contact_head{
+    text-align: center;
+    color: #ffff;
+    font-size: 40px;
+    font-weight: 500;
+}
+.contact_container{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.contact_social{
+    margin-bottom: 20px;
+}
+.social_head{
+    font-size: 40px;
+    font-weight: 100;
+    color: #ffff;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.email_add{
+    font-weight: 100;
+    color: #ffff;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.icons{
+    color: #ffff;
+    margin-left: 15px;
+}
