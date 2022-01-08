@@ -6,6 +6,7 @@
     color: #D1D7E0;
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 .header>h2{
     font-weight: 100;

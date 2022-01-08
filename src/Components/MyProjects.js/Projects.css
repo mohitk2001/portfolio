@@ -1,0 +1,44 @@
+.projects{
+    background-color: rgb(25,24,26);
+    width: 100%;
+}
+.projects_content{
+    width: 75%;
+    margin: auto;
+}
+.projects_content>h1{
+    text-align: center;
+    color: rgb(242,136,9) ;
+    padding-top: 15px;
+}
+.projects_box{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.specific{
+    background-color: #FFFFFF;
+   text-align: center;
+   width: 30%;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   height: 300px;
+   transition: transform 450ms;
+}
+.specific>img{
+    width: 100px;
+    height: 160px;
+    object-fit: contain;
+   
+}
+.specific>h3{
+    font-weight: 100;
+    font-size: 30px;
+    cursor: pointer;
+}
+.specific:hover{
+    transform: scale(1.08);
+   
+}
