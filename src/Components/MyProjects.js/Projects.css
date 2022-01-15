@@ -25,20 +25,28 @@
    margin-top: 20px;
    margin-bottom: 20px;
    height: 300px;
+   border-radius: 10px;
    transition: transform 450ms;
 }
 .specific>img{
     width: 100px;
     height: 160px;
     object-fit: contain;
+    cursor: pointer;
    
+}
+.specific>h2{
+    cursor: pointer;
 }
 .specific>h3{
     font-weight: 100;
     font-size: 30px;
     cursor: pointer;
+    text-decoration: underline ;
 }
 .specific:hover{
     transform: scale(1.08);
+   box-shadow: 5px 10px 10px 10px grey;
+   margin-left: 10px;
    
 }

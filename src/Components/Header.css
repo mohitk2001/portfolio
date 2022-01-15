@@ -7,6 +7,7 @@
     position: sticky;
     top: 0;
     z-index: 100;
+    
 }
 .header>h2{
     font-weight: 100;
@@ -14,4 +15,5 @@
     font-family: "Titillium Web", sans-serif;
     margin-top: 20px;
     margin-bottom: 20px;
+    cursor: pointer;
 }
