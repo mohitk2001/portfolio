@@ -9,7 +9,7 @@ import vote from "../../Image/vote.jpg";
 import netflix from "../../Image/netflix.png";
 function Projects() {
   return (
-    <div className="projects">
+    <div className="projects" id="projectsScroll">
       <div className="projects_content">
         <h1>My Projects</h1>
         <div className="projects_box">
@@ -28,7 +28,7 @@ function Projects() {
           <Specific
             title="Weather App"
             view={weather}
-            Url={"https://gallant-pare-cf3f37.netlify.app/"}
+            Url={"https://youthful-wozniak-00ffb6.netlify.app/"}
             source={"https://github.com/mohitk2001/weather-check"}
           />
           <Specific

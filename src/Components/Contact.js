@@ -9,16 +9,24 @@ function Contact() {
     const handlePDF=()=>{
         window.open("https://drive.google.com/file/d/1CDOWVGhUh_ClIhLgMS71GFp4c6Vs6w6P/view?usp=sharing");
     }
+    const handleGit=()=>{
+      window.open("https://github.com/mohitk2001");
+    }
+    const handleLL=()=>{
+      window.open("https://www.linkedin.com/in/mohit-kumar-41b85a1b3/");
+    }
+    const handleInsta=()=>{
+      window.open("https://www.instagram.com/001_mohit_/");
+    }
   return (
-    <div className="contact">
+    <div className="contact" id="contactScroll">
       <h2 className="contact_head">Contact Me </h2>
       <div className="contact_container">
         <div className="contact_social">
           <h2 className="social_head">Socials</h2>
-          <GitHubIcon fontSize="large" className="icons" />
-          <LinkedInIcon fontSize="large" className="icons" />
-          <InstagramIcon fontSize="large" className="icons" />
-          <EmailIcon fontSize="large" className="icons" />
+          <GitHubIcon fontSize="large" className="icons" onClick={handleGit} />
+          <LinkedInIcon fontSize="large" className="icons" onClick={handleLL} />
+          <InstagramIcon fontSize="large" className="icons" onClick={handleInsta} />
         </div>
         <div className="conatct_address">
           <h2 className="email_add">mohit725045.mk@gmail.com</h2>

@@ -9,15 +9,18 @@
     z-index: 100;
     
 }
-.header>.header_con>h2{
+.header>.header_con>a>h2{
     font-weight: 100;
     font-size: 35px;
     font-family: "Titillium Web", sans-serif;
     margin-top: 20px;
     margin-bottom: 20px;
     cursor: pointer;
+    color: #ffff;
 }
-
+.header_con>a{
+    text-decoration: none;
+}
 @media only screen and (max-width:500px){
     .header>.header_con{
         flex-direction: column;

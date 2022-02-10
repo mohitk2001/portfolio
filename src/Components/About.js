@@ -4,7 +4,7 @@ import frontEnd from "../Image/frontEnd.webp";
 import backEnd from "../Image/backEnd.webp";
 function About() {
   return (
-    <div className="about">
+    <div className="about" id="aboutScroll">
       <div className="about_content">
         <h2>About Me</h2>
        
