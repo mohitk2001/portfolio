@@ -1,0 +1,45 @@
+.about{
+    width: 100%;
+}
+.aboutMe_section{
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.aboutMe_section>small,.Skills>small{
+    font-size: 16px;
+    color: lightgray;
+}
+.aboutMe_section>h4,.Skills>h4{
+    font-size:30px;
+    color: #00aaff; 
+}
+._about_me_intro>p{
+    word-wrap: break-word;
+    font-size: 22px;
+}
+.Skills{
+    width: 100%;
+}
+.skill_details{
+    width: 100%;
+    display: flex;
+
+    justify-content: space-evenly;
+}
+.skills_check{
+    color: #00aaff !important;
+}
+.front_skills, .backendskills{
+    font-size: 30px;
+    font-weight: 100;
+    background-color:  #000066;
+    border-radius: 30px;
+    width: 40%;
+    padding: 10px;
+}
+.skills_list,.backend_skills_list{
+    font-weight: bold;
+}

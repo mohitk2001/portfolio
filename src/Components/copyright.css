@@ -1,0 +1,11 @@
+.copyright{
+    width: 100%;
+    background-color: #00aaff;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    font-size: 20px;
+}

@@ -5,6 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:#050529;
+  color: #ffff;
+}
+a{
+  text-decoration: none;
 }
 *{
   padding: 0;
@@ -24,6 +29,6 @@ html{
 
 /* top botton of scroll */
 ::-webkit-scrollbar-thumb {
-  background: #292730; 
+  background: #88819e; 
   border-radius: 10px;
 }

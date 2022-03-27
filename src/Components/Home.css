@@ -1,0 +1,65 @@
+.Home{
+    width: 100%;
+    height: 90vh;
+}
+
+.home_content{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    flex-direction: column;
+    
+}
+.home_short_details{
+    text-align: center;
+}
+.home_short_details>small{
+    color: lightgray;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.talk_button{
+    background-color: transparent;
+    color: #fff;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+   
+}
+.Icons{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+}
+.social_icons{
+    color: #00aaff !important;
+    cursor: pointer;
+    
+}
+.socialIcons>a{
+    transform: rotate(90deg);
+}
+.socialIcons>a>strong{
+    
+    font-size: 20px;
+    color: #00aaff;
+  
+}
+.home_image{
+    width: 60%;
+    text-align: center;
+}
+.home_image>img{
+    object-fit: contain;
+    border-radius: 50%;
+    margin-top: 10px;
+    width:200px;
+}

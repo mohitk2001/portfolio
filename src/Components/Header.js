@@ -1,32 +1,37 @@
 import React from "react";
-import { useState } from "react";
 import "./Header.css";
-import MenuIcon from "@material-ui/icons/Menu";
-import Project from "./MyProjects/Projects";
-import Contact from "./Contact";
-import About from "./About";
-import $ from "jquery";
+import HomeOutlinedIcon from "@material-ui/icons/HomeOutlined";
+import AccountCircleOutlinedIcon from "@material-ui/icons/AccountCircleOutlined";
+import MessageOutlinedIcon from "@material-ui/icons/MessageOutlined";
+import LibraryBooksOutlinedIcon from "@material-ui/icons/LibraryBooksOutlined";
+import IconButton from "@material-ui/core/IconButton";
 function Header() {
-  $(window).resize(() => {
-    //console.log(typeof($(window).width()));
-    if ($(window).width() < 500) {
-      console.log($(window).width());
-      $(".header_con").slideUp();
-    }
-  });
   return (
     <div className="header">
-      <div className="header_con">
-        <a href="#projectsScroll">
-          <h2>Projects</h2>
-        </a>
-        <a href="#aboutScroll">
-          <h2>About Me</h2>
-        </a>
-        <a href="#contactScroll">
-          <h2>Contact</h2>
-        </a>{" "}
-      </div>
+      <a href="#home_section">
+        <IconButton>
+          <HomeOutlinedIcon fontSize="large" className="header_icons active" />
+        </IconButton>
+      </a>
+      <a href="#about_section">
+        <IconButton>
+          <AccountCircleOutlinedIcon
+            fontSize="large"
+            className="header_icons"
+          />
+        </IconButton>
+      </a>
+
+      <a href="#contact_section">
+        <IconButton>
+          <MessageOutlinedIcon fontSize="large" className="header_icons" />
+        </IconButton>
+      </a>
+      <a href="#project_section">
+        <IconButton>
+          <LibraryBooksOutlinedIcon fontSize="large" className="header_icons" />
+        </IconButton>
+      </a>
     </div>
   );
 }

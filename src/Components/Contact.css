@@ -1,58 +1,55 @@
 .contact{
-    background-color:#4C495D ;
     width: 100%;
-    text-align: center;
-}
-.contact_head{
-    text-align: center;
-    color: #ffff;
-    font-size: 40px;
-    font-weight: 500;
 }
 .contact_container{
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    
+}
+.contact_details{
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     
 }
-.contact_social{
-    margin-bottom: 20px;
+.contact_container>small{
+    color: lightslategray;
 }
-.social_head{
-    font-size: 40px;
-    font-weight: 100;
-    color: #ffff;
-    text-align: center;
-    margin-bottom: 10px;
+.contact_container>h3{
+    color: #00aaff;
+}
+.contact_from_social{
+    width: 40%;
+}
+.contact_Email{
+    width: 40%;
+}
+.contact_form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.contact_form>input{
+    background: transparent;
+    font-size: 18px;
+    color: #00aaff;
     margin-top: 10px;
-}
-.email_add{
-    font-weight: 100;
-    color: #ffff;
-    text-align: center;
     margin-bottom: 10px;
+    border: 1px solid #00aaff;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+.contact_form>textarea{
+    width: 100%;
+    border: 1px solid #00aaff;
+    color: #00aaff;
+    outline: none;
+    border-radius: 10px;
+    background: transparent;
     margin-top: 10px;
-}
-.icons{
-    color: #ffff;
-    margin-left: 15px;
-}
-.contact_resume >h1{
-    color: #ffff;
-
-}
-.resume_{
-    color: #ffff !important;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    font-size: 50px !important;
-    cursor: pointer;
-}
-.icons:hover,.resume_:hover{
-    box-shadow: 5px 5px 10px  rgb(109, 25, 25);
-}
-@media only screen and (max-width: 600px){
-    .contact_container{
-        flex-direction: column;
-        
-    }
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 18px;
 }

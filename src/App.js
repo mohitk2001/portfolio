@@ -1,19 +1,22 @@
-import React from 'react'
-import About from './Components/About'
-import Contact from './Components/Contact'
-import Header from './Components/Header'
-import Top from './Components/Top'
-import Projects from './Components/MyProjects/Projects'
+import React from "react";
+import Copyright from "./Components/copyright";
+import Header from "./Components/Header";
+import Home from "./Components/Home";
+import Projects from "./Components/MyProjects/Projects";
+import "./App.css";
+import AboutMe from "./Components/AboutMe";
+import Contact from "./Components/Contact";
 function App() {
   return (
-    <div>
+    <div className="app">
       <Header/>
-      <Top/>
-      <About/>
+      <Home />
+      <AboutMe />
       <Projects/>
       <Contact/>
+      <Copyright/>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

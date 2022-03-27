@@ -1,31 +1,20 @@
-.header>.header_con{
-    background-color: #802BB1;
+.header{
+    position: fixed;
+    bottom: 10px;
+    left: 30%;
+    width: 35%;
     display: flex;
-    width: 100%;
     justify-content: space-evenly;
-    color: #D1D7E0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    
+    background: rgba(167, 154, 154, 0.2); 
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
 }
-.header>.header_con>a>h2{
-    font-weight: 100;
-    font-size: 35px;
-    font-family: "Titillium Web", sans-serif;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    cursor: pointer;
-    color: #ffff;
+.header_icons{
+    color: lightgray !important;
+    border-radius: 50%;
 }
-.header_con>a{
-    text-decoration: none;
-}
-@media only screen and (max-width:500px){
-    .header>.header_con{
-        flex-direction: column;
-    }
-    .header>.header_con>h2{
-        text-align: center;
-    }
+
+.active{
+    background-color:#00aaff;
+    color: black !important;
 }
