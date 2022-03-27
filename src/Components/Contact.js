@@ -1,13 +1,22 @@
-import React from 'react'
+import React,{useRef} from 'react'
 import "./Contact.css"
 import MailOutlineOutlinedIcon from '@material-ui/icons/MailOutlineOutlined';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import Socials from './Socials';
+import emailjs from "emailjs-com"
 function Contact() {
-    const formSubmit=(e)=>{
+    const form =useRef();
+    const sendEmail = (e) => {
         e.preventDefault();
-
-    }
+    
+        emailjs.sendForm('service_hbu7ub8', 'template_xi997s6', form.current, '-jn4gLdm3x6S5y5Gs')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+      };
+    
   return (
     <div className='contact my-md-5' id='contact_section'>
         <div className="contact_container my-md-5">
@@ -19,11 +28,11 @@ function Contact() {
                     <Socials icon={<WhatsAppIcon/>} URL="https://api.whatsapp.com/send?phone=9905017902" text="+91 9905017902" type="WhatsApp"/>
                 </div>
                 <div className="contact_Email">
-                    <form onSubmit={formSubmit} className="contact_form">
-                        <input type="text" placeholder='Your Name' />
-                        <input type="email" placeholder='Your Email' />
-                        <textarea placeholder='Your Message' id="" cols="30" rows="6"></textarea>
-                        <button type="submit" className='btn btn-primary'>Send Message</button>
+                    <form ref={form} onSubmit={sendEmail} className="contact_form">
+                        <input type="text" name='name' placeholder='Your Name' />
+                        <input type="email" name='email' placeholder='Your Email' />
+                        <textarea placeholder='Your Message' name="message" id="" cols="30" rows="6"></textarea>
+                        <button type="submit" className='btn btn-primary my-sm-2 my-1'>Send Message</button>
                     </form>
                 </div>
             </div>

@@ -4,8 +4,8 @@ function Socials({icon,text,URL,type}) {
   return (
     <div className='social my-4'>
         {icon}
-        <h4>{text}</h4>
-        <h4>{type}</h4>
+        <p>{text}</p>
+        <p>{type}</p>
         <a href={URL} target="_blank">send a message</a>
     </div>
   )

@@ -4,7 +4,7 @@ import CheckCircleOutlineOutlinedIcon from '@material-ui/icons/CheckCircleOutlin
 function AboutMe() {
   return (
     <div className="about" id="about_section">
-      <div className="aboutMe_section mt-md-4">
+      <div className="aboutMe_section mt-md-4 mt-sm-2 mt-0">
         <small>Get to know</small>
         <h4>About Me</h4>
         <div className="_about_me_intro">
@@ -18,7 +18,7 @@ function AboutMe() {
         <div className="Skills mt-md-5 ">
           <small>What skills I have</small>
           <h4>My Experiences</h4>
-          <div className="skill_details mt-md-5 mb-md-5">
+          <div className="skill_details mt-md-5 mb-md-5 mt-sm-3 mb-sm-3">
             <div className="front_skills">
               <dl className="skills_list">
                 <dt>Front-End skills</dt>

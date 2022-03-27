@@ -17,17 +17,17 @@ function Home() {
   }
   return (
     <div className="Home" id="home_section">
-      <div className="home_content mb-md-5 mt-md-5">
+      <div className="home_content mb-md-5 mb-sm-1 mb-0 mt-md-5 mt-sm-1 mt-0 ">
         <div className="home_short_details">
           <small>Helllo, I'm </small>
           <h1>Mohit Kumar</h1>
           <small>Full Stack Developer</small>
           <div className="mt-3 home_button">
-          <a href={pdf}download className="btn btn-primary mx-4 ">Download CV</a>
+          <a href={pdf}download className="btn btn-primary mx-sm-4 mx-1 my-2 ">Download CV</a>
           <a href="#contact_section" className="btn btn-light talk_button">Let's Talk</a>
           </div>
         </div>
-        <div className="socialIcons mt-5">
+        <div className="socialIcons mt-md-5 mt-sm-4">
           <div className="Icons">
             <LinkedInIcon fontSize="large" className="social_icons my-3" onClick={handleLL}/>
             <GitHubIcon fontSize="large" className="social_icons my-3" onClick={handleGit}/>

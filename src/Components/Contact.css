@@ -53,3 +53,29 @@
     padding: 10px;
     font-size: 18px;
 }
+
+
+/* ========= For Tab =========  */
+@media screen and (max-width: 768px) {
+    .contact_container{
+        width: 100%; 
+    }
+    .contact_details{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .contact_from_social{
+        width: 80%;
+    }
+    .contact_Email{
+        width: 80%;
+    }
+}
+
+/* ========= For mobile =========  */
+@media screen and (max-width: 425px) {
+
+}

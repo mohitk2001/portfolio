@@ -11,10 +11,28 @@
 }
 .header_icons{
     color: lightgray !important;
-    border-radius: 50%;
+    border-radius: 10px;
 }
 
-.active{
+#active{
     background-color:#00aaff;
     color: black !important;
 }
+/* ========Tab====== */
+@media screen and (max-width: 768px) {
+    .header{
+        position: fixed;
+        bottom: 10px;
+        left: 0%;
+        width: 100%;
+    }
+}
+/* ========mobile====== */
+/* @media screen and (max-width: 425px){
+    .header{
+        position: fixed;
+        bottom: 10px;
+        left: 0px;
+        width: 100%;
+    }
+} */

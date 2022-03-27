@@ -27,7 +27,7 @@
     width: 100%;
     display: flex;
 
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .skills_check{
     color: #00aaff !important;
@@ -41,5 +41,50 @@
     padding: 10px;
 }
 .skills_list,.backend_skills_list{
-    font-weight: bold;
+    font-weight: 800;
+}
+/* ========= For tab =========  */
+
+@media screen and (max-width: 768px) {
+    .aboutMe_section{
+        width: 100%;
+        margin: auto;  
+    }
+    .front_skills, .backendskills{
+        font-size: 20px;
+        width: 50%;
+      
+    }
+    .skills_list,.backend_skills_list{
+        font-weight: 100;
+    }
+}
+
+/* ========= For mobile =========  */
+@media screen and (max-width: 425px) {
+   
+    .aboutMe_section{
+        width: 90%;
+        margin: auto;
+      
+    }
+    .aboutMe_section>small,.Skills>small{
+        font-size: 14px;
+        color: lightgray;
+    }
+    .aboutMe_section>h4,.Skills>h4{
+        font-size:20px;
+        color: #00aaff; 
+    }
+    .front_skills, .backendskills{
+        font-size: 17px;
+        font-weight: 100;
+       
+    }
+    .skills_list,.backend_skills_list{
+        font-weight: 100;
+    }
+    .Skills>h4{
+        font-size: 16px;
+    }
 }
