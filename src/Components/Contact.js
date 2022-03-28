@@ -12,9 +12,11 @@ function Contact() {
         emailjs.sendForm('service_hbu7ub8', 'template_xi997s6', form.current, '-jn4gLdm3x6S5y5Gs')
           .then((result) => {
               console.log(result.text);
+              alert("Mohit will see your message very soon. Thank You ")
           }, (error) => {
               console.log(error.text);
           });
+          e.target.reset();
       };
     
   return (
